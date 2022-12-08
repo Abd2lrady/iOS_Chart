@@ -3,27 +3,67 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3C45F505293F30A40089C4D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45F504293F30A40089C4D2 /* AppDelegate.swift */; };
 		3C45F507293F30A40089C4D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45F506293F30A40089C4D2 /* SceneDelegate.swift */; };
-		3C45F509293F30A40089C4D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45F508293F30A40089C4D2 /* ViewController.swift */; };
-		3C45F50C293F30A40089C4D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C45F50A293F30A40089C4D2 /* Main.storyboard */; };
+		3C45F509293F30A40089C4D2 /* ChartsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45F508293F30A40089C4D2 /* ChartsContainerViewController.swift */; };
 		3C45F50E293F30A50089C4D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C45F50D293F30A50089C4D2 /* Assets.xcassets */; };
 		3C45F511293F30A50089C4D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C45F50F293F30A50089C4D2 /* LaunchScreen.storyboard */; };
+		3C45F519293F31150089C4D2 /* ChartsContainerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C45F518293F31150089C4D2 /* ChartsContainerViewController.xib */; };
+		3C45F51B293F35150089C4D2 /* UIViewController+ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45F51A293F35150089C4D2 /* UIViewController+ChildViewController.swift */; };
+		3C45F51E293F3AA90089C4D2 /* StatisticsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45F51C293F3AA90089C4D2 /* StatisticsCollectionViewController.swift */; };
+		3C45F51F293F3AA90089C4D2 /* StatisticsCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C45F51D293F3AA90089C4D2 /* StatisticsCollectionViewController.xib */; };
+		3C45F522293F3B8B0089C4D2 /* StatisticsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45F521293F3B8B0089C4D2 /* StatisticsEntity.swift */; };
+		3C45F52C293F3FFF0089C4D2 /* StatisticsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45F52A293F3FFF0089C4D2 /* StatisticsCollectionViewCell.swift */; };
+		3C45F52D293F3FFF0089C4D2 /* StatisticsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C45F52B293F3FFF0089C4D2 /* StatisticsCollectionViewCell.xib */; };
+		3C45F52E293F48310089C4D2 /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C45F529293F3DCE0089C4D2 /* Cairo-Regular.ttf */; };
+		3C45F532293F49BA0089C4D2 /* ChartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C45F530293F49BA0089C4D2 /* ChartsViewController.swift */; };
+		3C45F542293F536B0089C4D2 /* ChartsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C45F544293F536B0089C4D2 /* ChartsViewController.xib */; };
+		3C7BCA4D2941BC3900D0E9AF /* BarProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7BCA4C2941BC3900D0E9AF /* BarProgressView.swift */; };
+		3CBA7CCA2941DCCB00DCB350 /* BarProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBA7CC92941DCCB00DCB350 /* BarProgressView.xib */; };
+		3CBA7CCD2941DD4000DCB350 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBA7CCC2941DD3F00DCB350 /* CircularProgressView.swift */; };
+		3CBA7CCF2941DD5100DCB350 /* CircularProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBA7CCE2941DD5100DCB350 /* CircularProgressView.xib */; };
+		3CBA7CD22941E8C300DCB350 /* CircularProgressViewWithLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBA7CD12941E8C300DCB350 /* CircularProgressViewWithLabel.swift */; };
+		3CBA7CD42941E8D300DCB350 /* CircularProgressViewWithLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBA7CD32941E8D300DCB350 /* CircularProgressViewWithLabel.xib */; };
+		3CBA7CD72942064100DCB350 /* MultipleCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBA7CD62942064100DCB350 /* MultipleCircularProgressView.swift */; };
+		3CBA7CD92942066800DCB350 /* MultipleCircularProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBA7CD82942066800DCB350 /* MultipleCircularProgressView.xib */; };
+		3CBFC6352940C8F3003CAE5A /* ChartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBFC6332940C8F3003CAE5A /* ChartCollectionViewCell.swift */; };
+		3CBFC6362940C8F3003CAE5A /* ChartCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CBFC6342940C8F3003CAE5A /* ChartCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3C45F501293F30A40089C4D2 /* iOS_TryCharts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_TryCharts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C45F504293F30A40089C4D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C45F506293F30A40089C4D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3C45F508293F30A40089C4D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3C45F50B293F30A40089C4D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C45F508293F30A40089C4D2 /* ChartsContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsContainerViewController.swift; sourceTree = "<group>"; };
 		3C45F50D293F30A50089C4D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C45F510293F30A50089C4D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C45F512293F30A50089C4D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C45F518293F31150089C4D2 /* ChartsContainerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartsContainerViewController.xib; sourceTree = "<group>"; };
+		3C45F51A293F35150089C4D2 /* UIViewController+ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ChildViewController.swift"; sourceTree = "<group>"; };
+		3C45F51C293F3AA90089C4D2 /* StatisticsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsCollectionViewController.swift; sourceTree = "<group>"; };
+		3C45F51D293F3AA90089C4D2 /* StatisticsCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticsCollectionViewController.xib; sourceTree = "<group>"; };
+		3C45F521293F3B8B0089C4D2 /* StatisticsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsEntity.swift; sourceTree = "<group>"; };
+		3C45F529293F3DCE0089C4D2 /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
+		3C45F52A293F3FFF0089C4D2 /* StatisticsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsCollectionViewCell.swift; sourceTree = "<group>"; };
+		3C45F52B293F3FFF0089C4D2 /* StatisticsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatisticsCollectionViewCell.xib; sourceTree = "<group>"; };
+		3C45F530293F49BA0089C4D2 /* ChartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsViewController.swift; sourceTree = "<group>"; };
+		3C45F534293F4DBA0089C4D2 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3C45F543293F536B0089C4D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/ChartsViewController.xib; sourceTree = "<group>"; };
+		3C45F545293F53710089C4D2 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/ChartsViewController.strings; sourceTree = "<group>"; };
+		3C7BCA4C2941BC3900D0E9AF /* BarProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarProgressView.swift; sourceTree = "<group>"; };
+		3CBA7CC92941DCCB00DCB350 /* BarProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarProgressView.xib; sourceTree = "<group>"; };
+		3CBA7CCC2941DD3F00DCB350 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		3CBA7CCE2941DD5100DCB350 /* CircularProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircularProgressView.xib; sourceTree = "<group>"; };
+		3CBA7CD12941E8C300DCB350 /* CircularProgressViewWithLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressViewWithLabel.swift; sourceTree = "<group>"; };
+		3CBA7CD32941E8D300DCB350 /* CircularProgressViewWithLabel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircularProgressViewWithLabel.xib; sourceTree = "<group>"; };
+		3CBA7CD62942064100DCB350 /* MultipleCircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleCircularProgressView.swift; sourceTree = "<group>"; };
+		3CBA7CD82942066800DCB350 /* MultipleCircularProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultipleCircularProgressView.xib; sourceTree = "<group>"; };
+		3CBFC6332940C8F3003CAE5A /* ChartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartCollectionViewCell.swift; sourceTree = "<group>"; };
+		3CBFC6342940C8F3003CAE5A /* ChartCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChartCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +82,7 @@
 			children = (
 				3C45F503293F30A40089C4D2 /* iOS_TryCharts */,
 				3C45F502293F30A40089C4D2 /* Products */,
+				9DACFFD9F9681BB5A7CE18E2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +97,121 @@
 		3C45F503293F30A40089C4D2 /* iOS_TryCharts */ = {
 			isa = PBXGroup;
 			children = (
+				3C45F520293F3B760089C4D2 /* StatisticsViewController */,
+				3C45F52F293F498A0089C4D2 /* ChartsViewController */,
+				3C45F51A293F35150089C4D2 /* UIViewController+ChildViewController.swift */,
 				3C45F504293F30A40089C4D2 /* AppDelegate.swift */,
 				3C45F506293F30A40089C4D2 /* SceneDelegate.swift */,
-				3C45F508293F30A40089C4D2 /* ViewController.swift */,
-				3C45F50A293F30A40089C4D2 /* Main.storyboard */,
+				3C45F508293F30A40089C4D2 /* ChartsContainerViewController.swift */,
+				3C45F518293F31150089C4D2 /* ChartsContainerViewController.xib */,
 				3C45F50D293F30A50089C4D2 /* Assets.xcassets */,
 				3C45F50F293F30A50089C4D2 /* LaunchScreen.storyboard */,
 				3C45F512293F30A50089C4D2 /* Info.plist */,
+				3C45F529293F3DCE0089C4D2 /* Cairo-Regular.ttf */,
 			);
 			path = iOS_TryCharts;
+			sourceTree = "<group>";
+		};
+		3C45F520293F3B760089C4D2 /* StatisticsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3C45F528293F3C2D0089C4D2 /* CollectionView */,
+				3C45F527293F3C270089C4D2 /* Cell */,
+				3C45F521293F3B8B0089C4D2 /* StatisticsEntity.swift */,
+			);
+			path = StatisticsViewController;
+			sourceTree = "<group>";
+		};
+		3C45F527293F3C270089C4D2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3C45F52A293F3FFF0089C4D2 /* StatisticsCollectionViewCell.swift */,
+				3C45F52B293F3FFF0089C4D2 /* StatisticsCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3C45F528293F3C2D0089C4D2 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3C45F51C293F3AA90089C4D2 /* StatisticsCollectionViewController.swift */,
+				3C45F51D293F3AA90089C4D2 /* StatisticsCollectionViewController.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		3C45F52F293F498A0089C4D2 /* ChartsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3C7BCA4B2941BBFF00D0E9AF /* ChartView */,
+				3C45F546293F64150089C4D2 /* ChartCell */,
+				3C45F544293F536B0089C4D2 /* ChartsViewController.xib */,
+				3C45F530293F49BA0089C4D2 /* ChartsViewController.swift */,
+			);
+			path = ChartsViewController;
+			sourceTree = "<group>";
+		};
+		3C45F546293F64150089C4D2 /* ChartCell */ = {
+			isa = PBXGroup;
+			children = (
+				3CBFC6332940C8F3003CAE5A /* ChartCollectionViewCell.swift */,
+				3CBFC6342940C8F3003CAE5A /* ChartCollectionViewCell.xib */,
+			);
+			path = ChartCell;
+			sourceTree = "<group>";
+		};
+		3C7BCA4B2941BBFF00D0E9AF /* ChartView */ = {
+			isa = PBXGroup;
+			children = (
+				3CBA7CD5294205AD00DCB350 /* MultipleCircularProgress */,
+				3CBA7CD02941E81800DCB350 /* CircularProgressWithLabel */,
+				3CBA7CCB2941DCEE00DCB350 /* CircularProgress */,
+				3C7BCA502941DC3100D0E9AF /* BarProgrss */,
+			);
+			path = ChartView;
+			sourceTree = "<group>";
+		};
+		3C7BCA502941DC3100D0E9AF /* BarProgrss */ = {
+			isa = PBXGroup;
+			children = (
+				3C7BCA4C2941BC3900D0E9AF /* BarProgressView.swift */,
+				3CBA7CC92941DCCB00DCB350 /* BarProgressView.xib */,
+			);
+			path = BarProgrss;
+			sourceTree = "<group>";
+		};
+		3CBA7CCB2941DCEE00DCB350 /* CircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				3CBA7CCC2941DD3F00DCB350 /* CircularProgressView.swift */,
+				3CBA7CCE2941DD5100DCB350 /* CircularProgressView.xib */,
+			);
+			path = CircularProgress;
+			sourceTree = "<group>";
+		};
+		3CBA7CD02941E81800DCB350 /* CircularProgressWithLabel */ = {
+			isa = PBXGroup;
+			children = (
+				3CBA7CD12941E8C300DCB350 /* CircularProgressViewWithLabel.swift */,
+				3CBA7CD32941E8D300DCB350 /* CircularProgressViewWithLabel.xib */,
+			);
+			path = CircularProgressWithLabel;
+			sourceTree = "<group>";
+		};
+		3CBA7CD5294205AD00DCB350 /* MultipleCircularProgress */ = {
+			isa = PBXGroup;
+			children = (
+				3CBA7CD62942064100DCB350 /* MultipleCircularProgressView.swift */,
+				3CBA7CD82942066800DCB350 /* MultipleCircularProgressView.xib */,
+			);
+			path = MultipleCircularProgress;
+			sourceTree = "<group>";
+		};
+		9DACFFD9F9681BB5A7CE18E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,12 +250,13 @@
 				};
 			};
 			buildConfigurationList = 3C45F4FC293F30A40089C4D2 /* Build configuration list for PBXProject "iOS_TryCharts" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 3C45F4F8293F30A40089C4D2;
 			productRefGroup = 3C45F502293F30A40089C4D2 /* Products */;
@@ -125,9 +273,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CBA7CCF2941DD5100DCB350 /* CircularProgressView.xib in Resources */,
+				3C45F52E293F48310089C4D2 /* Cairo-Regular.ttf in Resources */,
+				3CBA7CCA2941DCCB00DCB350 /* BarProgressView.xib in Resources */,
+				3CBA7CD42941E8D300DCB350 /* CircularProgressViewWithLabel.xib in Resources */,
+				3CBA7CD92942066800DCB350 /* MultipleCircularProgressView.xib in Resources */,
+				3CBFC6362940C8F3003CAE5A /* ChartCollectionViewCell.xib in Resources */,
 				3C45F511293F30A50089C4D2 /* LaunchScreen.storyboard in Resources */,
+				3C45F542293F536B0089C4D2 /* ChartsViewController.xib in Resources */,
+				3C45F51F293F3AA90089C4D2 /* StatisticsCollectionViewController.xib in Resources */,
+				3C45F519293F31150089C4D2 /* ChartsContainerViewController.xib in Resources */,
 				3C45F50E293F30A50089C4D2 /* Assets.xcassets in Resources */,
-				3C45F50C293F30A40089C4D2 /* Main.storyboard in Resources */,
+				3C45F52D293F3FFF0089C4D2 /* StatisticsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,29 +295,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C45F509293F30A40089C4D2 /* ViewController.swift in Sources */,
+				3CBA7CD72942064100DCB350 /* MultipleCircularProgressView.swift in Sources */,
+				3C45F51B293F35150089C4D2 /* UIViewController+ChildViewController.swift in Sources */,
+				3C45F532293F49BA0089C4D2 /* ChartsViewController.swift in Sources */,
+				3C45F509293F30A40089C4D2 /* ChartsContainerViewController.swift in Sources */,
+				3C7BCA4D2941BC3900D0E9AF /* BarProgressView.swift in Sources */,
+				3CBA7CD22941E8C300DCB350 /* CircularProgressViewWithLabel.swift in Sources */,
+				3C45F52C293F3FFF0089C4D2 /* StatisticsCollectionViewCell.swift in Sources */,
 				3C45F505293F30A40089C4D2 /* AppDelegate.swift in Sources */,
+				3CBFC6352940C8F3003CAE5A /* ChartCollectionViewCell.swift in Sources */,
+				3C45F522293F3B8B0089C4D2 /* StatisticsEntity.swift in Sources */,
 				3C45F507293F30A40089C4D2 /* SceneDelegate.swift in Sources */,
+				3CBA7CCD2941DD4000DCB350 /* CircularProgressView.swift in Sources */,
+				3C45F51E293F3AA90089C4D2 /* StatisticsCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3C45F50A293F30A40089C4D2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3C45F50B293F30A40089C4D2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3C45F50F293F30A50089C4D2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3C45F510293F30A50089C4D2 /* Base */,
+				3C45F534293F4DBA0089C4D2 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3C45F544293F536B0089C4D2 /* ChartsViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C45F543293F536B0089C4D2 /* Base */,
+				3C45F545293F53710089C4D2 /* ar */,
+			);
+			name = ChartsViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -170,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -230,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -291,7 +462,6 @@
 				INFOPLIST_FILE = iOS_TryCharts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +488,6 @@
 				INFOPLIST_FILE = iOS_TryCharts/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

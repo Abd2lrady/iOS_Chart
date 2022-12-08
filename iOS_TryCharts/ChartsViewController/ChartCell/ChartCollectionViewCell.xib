@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChartCell" id="gTV-IL-0wX" customClass="ChartCollectionViewCell" customModule="iOS_TryCharts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="55" height="198"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="55" height="198"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TB-gt-raf" userLabel="ProgressView" customClass="BarProgressView" customModule="iOS_TryCharts" customModuleProvider="target">
+                        <rect key="frame" x="23.666666666666668" y="15.333333333333329" width="8" height="150"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="afu-HB-Rgl"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="8" id="jHn-aD-ubF"/>
+                            <constraint firstAttribute="height" constant="150" id="m4Z-TF-vL2"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlu-Eb-teY">
+                        <rect key="frame" x="8" y="171.33333333333334" width="39.333333333333336" height="18.666666666666657"/>
+                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="7TB-gt-raf" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Inj-ZP-TbB"/>
+                <constraint firstItem="qlu-Eb-teY" firstAttribute="top" secondItem="7TB-gt-raf" secondAttribute="bottom" constant="6" id="Qg7-Wd-c8l"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="qlu-Eb-teY" secondAttribute="bottom" constant="8" id="mlb-Xl-FKB"/>
+                <constraint firstItem="qlu-Eb-teY" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="pff-vK-bAN"/>
+            </constraints>
+            <size key="customSize" width="55" height="244"/>
+            <connections>
+                <outlet property="branchLabel" destination="qlu-Eb-teY" id="Va7-Bu-8uj"/>
+                <outlet property="progressView" destination="7TB-gt-raf" id="jZA-fZ-5MT"/>
+            </connections>
+            <point key="canvasLocation" x="260.76923076923077" y="88.151658767772503"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

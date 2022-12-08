@@ -1,0 +1,9 @@
+
+/* Class = "UILabel"; text = "total"; ObjectID = "EEO-iB-OwG"; */
+"EEO-iB-OwG.text" = "الإجمالى فى كل فرع";
+
+/* Class = "UILabel"; text = "sales"; ObjectID = "IFL-Yt-GgX"; */
+"IFL-Yt-GgX.text" = "مبيعات";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bhS-II-nWq"; */
+"bhS-II-nWq.normalTitle" = "Button";

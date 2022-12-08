@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StatisticsCell" id="gTV-IL-0wX" customClass="StatisticsCollectionViewCell" customModule="iOS_TryCharts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="190" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fBo-Om-szU" userLabel="contentView">
+                        <rect key="frame" x="0.0" y="0.0" width="190" height="140"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addedValue_ic" translatesAutoresizingMaskIntoConstraints="NO" id="G8T-3i-2qH">
+                                <rect key="frame" x="75" y="16" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Lt6-rP-n2P"/>
+                                    <constraint firstAttribute="width" constant="40" id="hgs-hW-Ecv"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kLp-6a-Tn5">
+                                <rect key="frame" x="60.333333333333336" y="72" width="69.333333333333314" height="52"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIG-l9-42H" userLabel="TitleLabel">
+                                        <rect key="frame" x="16.666666666666664" y="0.0" width="36" height="22"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YzD-9g-gbk">
+                                        <rect key="frame" x="0.0" y="22" width="69.333333333333329" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXd-AU-AhV" userLabel="QuantityLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="27" height="30"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ر . س" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHZ-Vy-o8L" userLabel="CurrencyLabel">
+                                                <rect key="frame" x="34.999999999999986" y="0.0" width="34.333333333333329" height="30"/>
+                                                <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="addedValueCellColor"/>
+                        <constraints>
+                            <constraint firstItem="G8T-3i-2qH" firstAttribute="top" secondItem="fBo-Om-szU" secondAttribute="top" constant="16" id="3sE-zN-xaC"/>
+                            <constraint firstItem="kLp-6a-Tn5" firstAttribute="top" secondItem="G8T-3i-2qH" secondAttribute="bottom" constant="16" id="5iB-CL-apU"/>
+                            <constraint firstItem="kLp-6a-Tn5" firstAttribute="centerX" secondItem="fBo-Om-szU" secondAttribute="centerX" id="C9a-xj-keF"/>
+                            <constraint firstItem="kLp-6a-Tn5" firstAttribute="bottom" secondItem="fBo-Om-szU" secondAttribute="bottom" constant="-16" id="WTB-HS-6xC"/>
+                            <constraint firstItem="G8T-3i-2qH" firstAttribute="centerX" secondItem="fBo-Om-szU" secondAttribute="centerX" id="zXi-Tt-bHN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fBo-Om-szU" secondAttribute="bottom" id="9SN-nI-amS"/>
+                <constraint firstItem="fBo-Om-szU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OuY-tB-MzW"/>
+                <constraint firstItem="fBo-Om-szU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="XHD-iX-Xsg"/>
+                <constraint firstAttribute="trailing" secondItem="fBo-Om-szU" secondAttribute="trailing" id="sdw-fb-s8p"/>
+            </constraints>
+            <size key="customSize" width="319" height="209"/>
+            <connections>
+                <outlet property="backView" destination="fBo-Om-szU" id="zd8-Mf-dQe"/>
+                <outlet property="img" destination="G8T-3i-2qH" id="1DC-kE-AX1"/>
+                <outlet property="quantityLabel" destination="nXd-AU-AhV" id="iyH-ZN-iFK"/>
+                <outlet property="titleLabel" destination="cIG-l9-42H" id="qGi-e5-BGz"/>
+            </connections>
+            <point key="canvasLocation" x="146.92307692307691" y="45.142180094786731"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="addedValue_ic" width="24" height="20"/>
+        <namedColor name="addedValueCellColor">
+            <color red="0.94499999284744263" green="0.94499999284744263" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
