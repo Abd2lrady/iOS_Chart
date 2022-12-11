@@ -96,8 +96,12 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0U-SC-eeG" customClass="MultipleCircularProgressView" customModule="iOS_TryCharts" customModuleProvider="target">
-                    <rect key="frame" x="16" y="275" width="358" height="294"/>
+                    <rect key="frame" x="-5" y="222" width="400" height="400"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="400" id="7rH-hu-82d"/>
+                        <constraint firstAttribute="width" secondItem="c0U-SC-eeG" secondAttribute="height" id="Bhr-VB-w4E"/>
+                    </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
@@ -106,16 +110,14 @@
                 <constraint firstItem="VbM-jK-6r0" firstAttribute="top" secondItem="vig-s7-BNL" secondAttribute="bottom" constant="32" id="16L-f9-YA7"/>
                 <constraint firstItem="39l-3s-THO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="5XW-W1-Gd7"/>
                 <constraint firstItem="vig-s7-BNL" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-16" id="GPx-U2-was"/>
-                <constraint firstItem="c0U-SC-eeG" firstAttribute="top" secondItem="vig-s7-BNL" secondAttribute="bottom" constant="121" id="HjC-Hb-OSp"/>
-                <constraint firstItem="c0U-SC-eeG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="MNd-V7-b9q"/>
+                <constraint firstItem="c0U-SC-eeG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IhA-h4-KA9"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="39l-3s-THO" secondAttribute="trailing" constant="16" id="MjZ-zI-ODM"/>
+                <constraint firstItem="c0U-SC-eeG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PnM-eC-lwI"/>
                 <constraint firstItem="vig-s7-BNL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="2" id="PuJ-k3-8BF"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="c0U-SC-eeG" secondAttribute="trailing" constant="16" id="ZWA-NI-8Ms"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="VbM-jK-6r0" secondAttribute="trailing" id="dU1-sC-p75"/>
                 <constraint firstItem="39l-3s-THO" firstAttribute="top" secondItem="VbM-jK-6r0" secondAttribute="bottom" constant="16" id="gCd-0J-j5n"/>
                 <constraint firstItem="vig-s7-BNL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="gpI-fd-IUB"/>
                 <constraint firstItem="VbM-jK-6r0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="h0K-Qv-o6E"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="c0U-SC-eeG" secondAttribute="bottom" constant="241" id="zSZ-Ae-jLU"/>
             </constraints>
             <point key="canvasLocation" x="47.692307692307693" y="20.616113744075829"/>
         </view>

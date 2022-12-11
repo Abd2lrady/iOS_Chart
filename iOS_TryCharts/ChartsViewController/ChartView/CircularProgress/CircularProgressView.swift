@@ -16,7 +16,7 @@ class CircularProgressView: UIView {
     private let foregroundLayer = CAShapeLayer()
 
     var progressColor = UIColor.black
-    var trackColor = UIColor.white
+    var trackColor = UIColor.lightGray
 
     var progress: CGFloat  {
         get {
@@ -46,15 +46,15 @@ class CircularProgressView: UIView {
         
         
         
-        backLayer(at: centerPoint, radius: rect.width / 2)
-        foreLayer(at: centerPoint, radius: rect.width / 2)
+        configBackLayer(at: centerPoint, radius: rect.width / 2)
+        configForeLayer(at: centerPoint, radius: rect.width / 2)
 
         contentView.layer.addSublayer(backgroundLayer)
         contentView.layer.addSublayer(foregroundLayer)
         
     }
     
-    private func backLayer(at centerPoint: CGPoint, radius: CGFloat) {
+    private func configBackLayer(at centerPoint: CGPoint, radius: CGFloat) {
         backPath = UIBezierPath(arcCenter: centerPoint,
                                 radius: radius,
                                 startAngle: 0,
@@ -75,7 +75,7 @@ class CircularProgressView: UIView {
         backgroundLayer.fillColor = nil
     }
     
-    private func foreLayer(at centerPoint: CGPoint,
+    private func configForeLayer(at centerPoint: CGPoint,
                            radius: CGFloat) {
         forePath = UIBezierPath(arcCenter: centerPoint,
                                 radius: radius,
