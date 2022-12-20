@@ -38,17 +38,24 @@ class ChartsContainerViewController: UIViewController {
     }
     
     func configCharts() {
-        var charts = [CircularProgressView]()
-        let progresses = [0.1, 0.2, 0.7, 0.8, 1]
-        let colors: [UIColor] = [.black, .red, .green, .yellow, .blue ]
         
-        for i in 0 ..< progresses.count {
-            let chart = CircularProgressView()
-            chart.progress = progresses[i]
-            chart.progressColor = colors[i]
-            charts.append(chart)
+        let progresses: [(Double, UIColor)] = [(0.1, .black),
+                                               (0.2, .gray),
+                                               (0.4, .red),
+                                               (0.6, .cyan),
+                                               (0.7, .yellow),
+                                               (0.3, .purple),
+                                               (0.9, .green),
+                                               (1, .blue)]
+        
+        let circularCharts = progresses.map { progress in
+            let circularChart = CircularProgressView()
+            circularChart.progress = progress.0
+            circularChart.progressColor = progress.1
+            return circularChart
         }
-        multipleCharts.setViews(charts)
+        
+        multipleCharts.setViews(circularCharts)
     }
     
 }

@@ -16,7 +16,7 @@ class CircularProgressView: UIView {
     private let foregroundLayer = CAShapeLayer()
 
     var progressColor = UIColor.black
-    var trackColor = UIColor.lightGray
+    var trackColor = UIColor.white
 
     var progress: CGFloat  {
         get {

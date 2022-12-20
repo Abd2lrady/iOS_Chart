@@ -82,7 +82,6 @@
 			children = (
 				3C45F503293F30A40089C4D2 /* iOS_TryCharts */,
 				3C45F502293F30A40089C4D2 /* Products */,
-				9DACFFD9F9681BB5A7CE18E2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,13 +204,6 @@
 				3CBA7CD82942066800DCB350 /* MultipleCircularProgressView.xib */,
 			);
 			path = MultipleCircularProgress;
-			sourceTree = "<group>";
-		};
-		9DACFFD9F9681BB5A7CE18E2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

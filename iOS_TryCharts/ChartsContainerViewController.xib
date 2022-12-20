@@ -96,10 +96,10 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0U-SC-eeG" customClass="MultipleCircularProgressView" customModule="iOS_TryCharts" customModuleProvider="target">
-                    <rect key="frame" x="-5" y="222" width="400" height="400"/>
+                    <rect key="frame" x="70" y="297" width="250" height="250"/>
                     <color key="backgroundColor" systemColor="systemGreenColor"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="400" id="7rH-hu-82d"/>
+                        <constraint firstAttribute="width" constant="250" id="7rH-hu-82d"/>
                         <constraint firstAttribute="width" secondItem="c0U-SC-eeG" secondAttribute="height" id="Bhr-VB-w4E"/>
                     </constraints>
                 </view>

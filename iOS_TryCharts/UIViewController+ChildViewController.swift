@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import Charts
 
 extension UIViewController {
-    
+
     func addChildController(_ viewController: UIViewController, to view: UIView) {
         self.addChild(viewController)
         view.addSubview(viewController.view)
